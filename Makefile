@@ -3,8 +3,8 @@ CXXFLAGS := -pedantic-errors -Wall -Wextra -Werror
 LDFLAGS  := -L/usr/lib -lstdc++ -lm
 BUILD    := ./build
 OBJ_DIR  := $(BUILD)/objects
-APP_DIR  := $(BUILD)/apps
-TARGET   := program
+APP_DIR  := $(BUILD)/app
+TARGET   := helloworld
 INCLUDE  := -Iinclude/
 SRC      :=                      \
    $(wildcard src/module1/*.cpp) \
