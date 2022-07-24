@@ -1,9 +1,0 @@
-make.exe info --dry-run --keep-going --print-directory
-make: Entering directory '/c/Users/rafael.olonapoblet/Desktop/tutorial/code/helloworld'
-echo "[*] Application dir: ./build/app     "
-echo "[*] Object dir:      ./build/objects     "
-echo "[*] Sources:           src/helloworld.cpp          "
-echo "[*] Objects:         ./build/objects/src/helloworld.o     "
-echo "[*] Dependencies:    ./build/objects/src/helloworld.d"
-make: Leaving directory '/c/Users/rafael.olonapoblet/Desktop/tutorial/code/helloworld'
- 
