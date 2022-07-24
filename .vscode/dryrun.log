@@ -1,11 +1,9 @@
-make.exe --dry-run --always-make --keep-going --print-directory
+make.exe info --dry-run --keep-going --print-directory
 make: Entering directory '/c/Users/rafael.olonapoblet/Desktop/tutorial/code/helloworld'
-mkdir -p ./build/app
-mkdir -p ./build/objects
- 
-mkdir -p build/objects/src
-c++ -pedantic-errors -Wall -Wextra -Werror -Iinclude/ -c src/helloworld.cpp -MMD -o build/objects/src/helloworld.o
-mkdir -p build/app
-c++ -pedantic-errors -Wall -Wextra -Werror -o ./build/app/helloworld build/objects/src/helloworld.o -L/usr/lib -lstdc++ -lm
+echo "[*] Application dir: ./build/app     "
+echo "[*] Object dir:      ./build/objects     "
+echo "[*] Sources:           src/helloworld.cpp          "
+echo "[*] Objects:         ./build/objects/src/helloworld.o     "
+echo "[*] Dependencies:    ./build/objects/src/helloworld.d"
 make: Leaving directory '/c/Users/rafael.olonapoblet/Desktop/tutorial/code/helloworld'
  

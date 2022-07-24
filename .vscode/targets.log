@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Sun Jul 24 13:40:46 2022
+# Make data base, printed on Sun Jul 24 13:42:36 2022
 
 # Variables
 
@@ -57,7 +57,6 @@ VK_SDK_PATH = C:\VulkanSDK\1.2.198.1
 %F = $(notdir $%)
 # environment
 VSCODE_CODE_CACHE_PATH = C:\Users\rafael.olonapoblet\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
- 
 # environment
 LANG = C
 # default
@@ -89,6 +88,7 @@ COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # makefile (from 'Makefile', line 1)
+ 
 MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
@@ -263,6 +263,7 @@ build/app/helloworld: build/objects/src/helloworld.o
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 25):
+ 
 	@mkdir -p $(@D)
 	$(CXX) $(CXXFLAGS) -o $(APP_DIR)/$(TARGET) $^ $(LDFLAGS)
 
@@ -335,7 +336,6 @@ build:
 #  Needs to be updated (-q is set).
 # automatic
 # @ := build
- 
 # automatic
 # * := 
 # automatic
@@ -393,11 +393,12 @@ release: all
 # No general ('VPATH' variable) search path.
 
 # strcache buffers: 1 (0) / strings = 26 / storage = 272 B / avg = 10 B
+ 
 # current buf: size = 8162 B / used = 272 B / count = 26 / avg = 10 B
 
 # strcache performance: lookups = 56 / hit rate = 53%
 # hash-table stats:
 # Load=26/8192=0%, Rehash=0, Collisions=0/56=0%
-# Finished Make data base on Sun Jul 24 13:40:46 2022
+# Finished Make data base on Sun Jul 24 13:42:36 2022
 
  
