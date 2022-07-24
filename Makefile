@@ -7,13 +7,13 @@ APP_DIR  := $(BUILD)/app
 TARGET   := helloworld
 INCLUDE  := -Iinclude/
 SRC      :=                      \
-   $(wildcard src/module1/*.cpp) \
-   $(wildcard src/module2/*.cpp) \
    $(wildcard src/*.cpp)         \
 
 OBJECTS  := $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 DEPENDENCIES \
          := $(OBJECTS:.o=.d)
+
+.PHONY: all build debug release clean info
 
 all: build $(APP_DIR)/$(TARGET)
 
@@ -27,8 +27,6 @@ $(APP_DIR)/$(TARGET): $(OBJECTS)
 
 -include $(DEPENDENCIES)
 
-.PHONY: all build clean debug release info
-
 build:
 	@mkdir -p $(APP_DIR)
 	@mkdir -p $(OBJ_DIR)
@@ -40,8 +38,7 @@ release: CXXFLAGS += -O2
 release: all
 
 clean:
-	-@rm -rvf $(OBJ_DIR)/*
-	-@rm -rvf $(APP_DIR)/*
+	-@rm -rvf $(BUILD)
 
 info:
 	@echo "[*] Application dir: ${APP_DIR}     "
